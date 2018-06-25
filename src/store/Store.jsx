@@ -8,17 +8,9 @@ export default class Store {
 
   // 해당 액션 내용
   @action
-  addHead(text) {
-    this.head = text;
-  }
-
-  @action
-  addStory(text) {
-    this.story = text;
-  }
-
-  @action
-  addWriter(text) {
-    this.writer = text;
+  addAction(head, story, writer) {
+    this.head = head;
+    this.story = story;
+    this.writer = writer;
   }
 }

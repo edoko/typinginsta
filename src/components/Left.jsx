@@ -65,9 +65,7 @@ export default class Left extends Component {
   handleAction = () => {
     // 스토어의 액션을 불러들여 액션 이용
     const store = this.props.store;
-    store.addHead(this.state.head);
-    store.addStory(this.state.story);
-    store.addWriter(this.state.writer);
+    store.addAction(this.state.head, this.state.story, this.state.writer);
   };
 
   // 백그라운드 배경을 자신이 갖고 있는 이미지를 업로드하여 교체
