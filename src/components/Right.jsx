@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Paper from "@material-ui/core/Paper";
 import { observer, inject } from "mobx-react";
 import "./Right.css";
 
@@ -15,19 +14,17 @@ export default class Right extends Component {
 
     return (
       <div className="right">
-        <Paper className="r-paper2">
-          <div id="result" className="result">
-            <div className="r-head">
-              <h2>{head}</h2>
-            </div>
-            <div className="r-story">
-              <span>{story}</span>
-            </div>
-            <div className="r-writer">
-              <span>{writer}</span>
-            </div>
+        <div id="result" className="result">
+          <div className="r-head">
+            <h2>{head}</h2>
           </div>
-        </Paper>
+          <div className="r-story">
+            <span>{story}</span>
+          </div>
+          <div className="r-writer">
+            <span>{writer}</span>
+          </div>
+        </div>
       </div>
     );
   }

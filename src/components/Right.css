@@ -6,23 +6,11 @@
   background-image: url("../img/bg.jpg");
 }
 
-.r-paper2 {
-  width: 450px;
-  height: 450px;
-  margin: 0 auto;
-  background-image: url("../img/bg.jpg");
-}
-
 @media (max-width: 468px) {
   .result {
     width: 310px;
     height: 310px;
     padding: 5px;
-  }
-
-  .r-paper2 {
-    width: 320px;
-    height: 320px;
   }
 }
 

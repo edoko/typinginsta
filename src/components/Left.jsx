@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import { observer, inject } from "mobx-react";
 import domtoimage from "dom-to-image";
+import bg from "../img/bg.jpg";
 import "./Left.css";
 
 // 스토어 주입
@@ -90,6 +91,12 @@ export default class Left extends Component {
     fileReader.readAsDataURL(file);
   };
 
+  // 기본 배경으로 바꾸기
+  setDefaultBg = () => {
+    let node = document.getElementById("result");
+    node.style.backgroundImage = `url(${bg})`;
+  };
+
   render() {
     return (
       <div className="left">
@@ -131,12 +138,25 @@ export default class Left extends Component {
               }}
             />
             <br />
-            <input
-              accept="image/*"
-              className="input_img"
-              type="file"
-              onChange={e => this.uploadImage(e)}
-            />
+            <div className="bg">
+              배경 선택:&nbsp;
+              <input
+                accept="image/*"
+                className="input_img"
+                type="file"
+                onChange={e => this.uploadImage(e)}
+              />
+            </div>
+            <div className="btn-bg">
+              <Button
+                className="btn-defaultbg"
+                variant="contained"
+                size="small"
+                onClick={this.setDefaultBg}
+              >
+                기본 배경
+              </Button>
+            </div>
           </form>
           <Button
             className="btn-create"
