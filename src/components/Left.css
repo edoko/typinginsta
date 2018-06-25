@@ -1,0 +1,20 @@
+.r-paper {
+  padding: 20px 20px 40px 20px;
+  width: 500px;
+}
+
+@media (max-width: 468px) {
+  .r-paper {
+    padding: 5px;
+    width: 315px;
+  }
+}
+
+.btn-create {
+  margin-top: 20px !important;
+  margin-right: 20px !important;
+}
+
+.btn-save {
+  margin-top: 20px !important;
+}

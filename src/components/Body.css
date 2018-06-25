@@ -1,0 +1,17 @@
+.r-body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .r-body {
+    width: 600px;
+  }
+}
+
+@media (max-width: 468px) {
+  .r-body {
+    width: 320px;
+    margin: 0 auto;
+  }
+}

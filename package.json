@@ -1,0 +1,20 @@
+{
+  "name": "react-insta",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.2.3",
+    "custom-react-scripts": "0.2.2",
+    "dom-to-image": "^2.6.0",
+    "mobx": "^5.0.3",
+    "mobx-react": "^5.2.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
