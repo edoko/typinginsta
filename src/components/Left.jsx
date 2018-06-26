@@ -4,7 +4,9 @@ import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import { observer, inject } from "mobx-react";
 import domtoimage from "dom-to-image";
+import ReactQuill from "react-quill";
 import bg from "../img/bg.jpg";
+import "react-quill/dist/quill.snow.css";
 import "./Left.css";
 
 // 스토어 주입
@@ -29,9 +31,9 @@ export default class Left extends Component {
     });
   };
 
-  handleChange2 = event => {
+  handleChange2 = value => {
     this.setState({
-      story: event.target.value
+      story: value
     });
   };
 
@@ -114,19 +116,13 @@ export default class Left extends Component {
               style={{ width: 200 }}
             />
             <br />
-            <TextField
-              label="내용"
-              className="txt_story"
-              value={this.state.story}
-              onChange={this.handleChange2}
-              maxLength="100"
-              margin="normal"
-              inputProps={{
-                maxLength: 300
-              }}
-              style={{ width: 300 }}
-            />
-            <br />
+            <div className="editor">
+              <ReactQuill
+                value={this.state.story}
+                onChange={this.handleChange2}
+                placeholder="여기에 입력해주세요."
+              />
+            </div>
             <TextField
               label="글쓴이"
               className="txt_writer"

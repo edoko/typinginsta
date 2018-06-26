@@ -18,9 +18,10 @@ export default class Right extends Component {
           <div className="r-head">
             <h2>{head}</h2>
           </div>
-          <div className="r-story">
-            <span>{story}</span>
-          </div>
+          <div
+            className="r-story"
+            dangerouslySetInnerHTML={{ __html: story }}
+          />
           <div className="r-writer">
             <span>{writer}</span>
           </div>

@@ -37,6 +37,7 @@
   font-weight: 400;
 }
 
-h2 {
+h2,
+p {
   margin: 0 !important;
 }
