@@ -114,7 +114,7 @@ export default class Left extends Component {
               onChange={this.handleChange}
               margin="normal"
               inputProps={{
-                maxLength: 15
+                maxLength: 20
               }}
               style={{ width: 200 }}
             />
@@ -133,7 +133,7 @@ export default class Left extends Component {
               onChange={this.handleChange3}
               margin="normal"
               inputProps={{
-                maxLength: 10
+                maxLength: 30
               }}
             />
             <br />
@@ -157,14 +157,6 @@ export default class Left extends Component {
               </Button>
             </div>
           </form>
-          <Button
-            className="btn-create"
-            variant="contained"
-            color="primary"
-            onClick={this.handleAction}
-          >
-            생성
-          </Button>
           <Button
             className="btn-save"
             variant="contained"
