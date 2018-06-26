@@ -8,7 +8,7 @@ import "./Body.css";
 const Body = () => {
   return (
     <div className="r-body">
-      <Popup />
+      {/* <Popup /> */}
       <Grid container spacing={24}>
         <Grid item xs={12} sm={6}>
           <Left />
