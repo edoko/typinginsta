@@ -26,18 +26,27 @@ export default class Left extends Component {
 
   // 각 필드에 입력한 값을 state에 삽입
   handleChange = event => {
+    const store = this.props.store;
+    store.addHead(event.target.value);
+
     this.setState({
       head: event.target.value
     });
   };
 
   handleChange2 = value => {
+    const store = this.props.store;
+    store.addStory(value);
+
     this.setState({
       story: value
     });
   };
 
   handleChange3 = event => {
+    const store = this.props.store;
+    store.addWriter(event.target.value);
+
     this.setState({
       writer: event.target.value
     });
@@ -63,12 +72,6 @@ export default class Left extends Component {
         link.href = dataUrl;
         link.click();
       });
-  };
-
-  handleAction = () => {
-    // 스토어의 액션을 불러들여 액션 이용
-    const store = this.props.store;
-    store.addAction(this.state.head, this.state.story, this.state.writer);
   };
 
   // 백그라운드 배경을 자신이 갖고 있는 이미지를 업로드하여 교체
