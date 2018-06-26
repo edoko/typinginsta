@@ -120,7 +120,7 @@ export default class Left extends Component {
               <ReactQuill
                 value={this.state.story}
                 onChange={this.handleChange2}
-                placeholder="여기에 입력해주세요."
+                placeholder="내용을 여기에 입력해주세요."
               />
             </div>
             <TextField
