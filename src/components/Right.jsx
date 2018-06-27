@@ -16,14 +16,15 @@ export default class Right extends Component {
       <div className="right">
         <div id="result" className="result">
           <div className="r-head">
-            <h2>{head}</h2>
+            <h2 id="font_head">{head}</h2>
           </div>
           <div
+            id="font_story"
             className="r-story"
             dangerouslySetInnerHTML={{ __html: story }}
           />
           <div className="r-writer">
-            <span>{writer}</span>
+            <span id="font_writer">{writer}</span>
           </div>
         </div>
       </div>

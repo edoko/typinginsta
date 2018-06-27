@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import { observer, inject } from "mobx-react";
 import domtoimage from "dom-to-image";
 import ReactQuill from "react-quill";
+import Fonts from "./Fonts";
 import bg from "../img/bg.jpg";
 import "react-quill/dist/quill.snow.css";
 import "./Left.css";
@@ -155,6 +156,9 @@ export default class Left extends Component {
               >
                 기본 배경
               </Button>
+              <div className="r-font">
+                <Fonts />
+              </div>
             </div>
           </form>
           <Button

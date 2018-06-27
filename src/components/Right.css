@@ -1,3 +1,51 @@
+/* 나눔고딕 폰트 불러오기 */
+@font-face {
+  font-family: Nanum Gothic;
+  src: url("../fonts/NanumGothic.eot") format("embedded-opentype"),
+    url("../fonts/NanumGothic.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Nanum Gothic;
+  src: url("../fonts/NanumGothic800.eot") format("embedded-opentype"),
+    url("../fonts/NanumGothic800.woff") format("woff");
+  font-weight: 800;
+}
+
+/* 나눔바른고딕 폰트 불러오기 */
+@font-face {
+  font-family: Nanum Barun Gothic;
+  src: url("../fonts/NanumBarunGothic.eot") format("embedded-opentype"),
+    url("../fonts/NanumBarunGothic.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Nanum Barun Gothic;
+  src: url("../fonts/NanumBarunGothicBold.eot") format("embedded-opentype"),
+    url("../fonts/NanumBarunGothicBold.woff") format("woff");
+  font-weight: 700;
+}
+
+/* 나눔스퀘어 폰트 불러오기 */
+@font-face {
+  font-family: NanumSquare;
+  src: url("../fonts/NanumSquareR.eot") format("embedded-opentype"),
+    url("../fonts/NanumSquareR.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: NanumSquare;
+  src: url("../fonts/NanumSquareB.eot") format("embedded-opentype"),
+    url("../fonts/NanumSquareB.woff") format("woff");
+  font-weight: 700;
+}
+
+#font_head,
+#font_story,
+#font_writer {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
 .result {
   width: 400px;
   height: 400px;
